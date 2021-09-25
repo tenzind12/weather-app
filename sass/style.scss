@@ -1,0 +1,89 @@
+$color-white: #fff;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-position: bottom;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.card {
+  background: #131212cc;
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 100%;
+  min-height: 35vh;
+  max-width: 800px;
+  color: $color-white;
+  margin: 1rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+
+  .search-bar {
+    border: none;
+    outline: none;
+    border-radius: 1.8rem;
+    background: #aaa8a82b;
+    color: $color-white;
+    padding: 1rem;
+    width: 70%;
+    font-size: 1.5rem;
+  }
+
+  button {
+    border: none;
+    margin-left: 1rem;
+    border-radius: 60%;
+    background: #7c7c7c2b;
+    color: $color-white;
+    transition: 0.2s ease-in-out;
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+
+    &:hover {
+      background: #e7e2e22b;
+      cursor: pointer;
+      transform: scale(1.01);
+    }
+  }
+}
+
+.temp {
+  margin: 0;
+}
+
+.icon-description-container {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 4rem;
+  }
+
+  .description {
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+  .card {
+    margin: 0;
+  }
+}

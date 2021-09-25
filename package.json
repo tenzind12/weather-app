@@ -1,0 +1,14 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Fetch Weather ",
+  "main": "app.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/style.scss style.css -w"
+  },
+  "author": "Tenzin",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
