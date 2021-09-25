@@ -35,10 +35,12 @@ const button = document.querySelector(".search button");
 
 button.addEventListener("click", function () {
   weather.fetchWeather(input.value);
+  input.value = "";
 });
 
 document.querySelector(".search-bar").addEventListener("keyup", function (e) {
   if (e.key == "Enter") {
     weather.fetchWeather(input.value);
+    input.value = "";
   }
 });
