@@ -1,12 +1,12 @@
 
 let weather = {
   api_key: "f7e2c1f8567b334eb52550100edf2d34",
-  fetchWeather: function (city) {
-    fetch(
+  fetchWeather: async function (city) {
+    const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=f7e2c1f8567b334eb52550100edf2d34`
-    )
-      .then((response) => response.json())
-      .then((data) => this.displayWeather(data));
+    );
+    const data = await response.json();
+    this.displayWeather(data);
   },
 
 
